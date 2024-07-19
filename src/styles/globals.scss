@@ -1,0 +1,36 @@
+@import "./header";
+@import "./quiz";
+@import "./variables";
+
+body {
+  background-color: $bg-color;
+  color: $primary-text;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 6rem 0;
+}
+
+.fx-col-sb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fx-sb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: $secondary-color;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  max-width: 35rem;
+}

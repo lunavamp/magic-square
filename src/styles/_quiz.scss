@@ -1,0 +1,43 @@
+@import "./variables";
+.magic-square-task {
+  gap: 3rem;
+  align-items: center;
+}
+.magic-grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  gap: none;
+  height: 37rem;
+  max-width: 37rem;
+  background-color: $secondary-color;
+  div {
+    border: 0.1rem solid $secondary-text;
+    height: 100%;
+    position: relative;
+  }
+  p {
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    font-size: $font-m;
+  }
+  input {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: $font-m;
+  }
+
+  .correct {
+    background-color: $secondary-color;
+  }
+  .error {
+    color: red;
+  }
+}
